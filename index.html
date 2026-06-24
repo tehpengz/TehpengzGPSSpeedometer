@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehpengz | Links</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #6366f1;
+            margin-bottom: 16px;
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+            letter-spacing: -0.025em;
+        }
+
+        .username {
+            color: #818cf8;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            line-height: 1.5;
+            margin-bottom: 32px;
+        }
+
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .link-card {
+            display: block;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #f8fafc;
+            text-decoration: none;
+            padding: 16px 24px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .app-highlight {
+            border: 1px solid rgba(99, 102, 241, 0.4);
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        .link-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #6366f1;
+            transform: translateY(-2px);
+        }
+
+        .app-highlight:hover {
+            background: rgba(99, 102, 241, 0.2);
+        }
+
+        .link-card:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profile Header -->
+        <img class="profile-img" src="avatar.png" alt="Tehpengz Profile Picture">
+        
+        <h1>Tehpengz</h1>
+        <div class="username">@tehpengz</div>
+        <p class="bio">🎬 Welcome! Check out my latest videos, rides, and content updates across my channels below.</p>
+
+        <!-- The Links -->
+        <div class="links-wrapper">
+            <a href="https://www.youtube.com/@tehpengz" class="link-card" target="_blank">📺 Watch on YouTube</a>
+            <a href="https://www.tiktok.com/@tehpengzkahdai" class="link-card" target="_blank">📱 Follow on TikTok</a>
+            
+            <!-- Link to your GitHub project repository -->
+            <a href="https://github.com/tehpengz/TehpengzGPSSpeedometer" class="link-card app-highlight" target="_blank">⏱️ Free Android Speedometer App / No Ads</a>
+        </div>
+    </div>
+
+</body>
+</html>
